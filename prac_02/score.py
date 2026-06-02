@@ -10,6 +10,13 @@ def main():
     status = determine_grade(score)
     print(f"User score {score} is {status}.")
 
+    if status == "Excellent":
+        print("You get a prize!")
+
+    random_score = random.randint(0, 100)
+    random_status = determine_grade(random_score)
+    print(f"Random: {random_score} = {random_status}")
+
 
 def determine_grade(score):
     """Determine the score status based on the score value"""
